@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background: skyblue;
+}
+.img1 {
+  height: 100vh;
+  background: cyan url(img/img3.avif) no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.hero {
+  color: white;
+  width: 350px;
+  background: rgba(0, 0, 0, 0.407);
+  border-radius: 15px;
+  padding: 60px 60px;
+
+  z-index: 10;
+  border: 3px solid rgba(255, 255, 255, 0.573);
+  backdrop-filter: blur(5px);
+}
+section {
+  width: 80%;
+  margin: auto;
+}
+.img2 {
+  background: url(img/img4.avif) no-repeat center center;
+  height: 60vh;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  background: rgba(0, 0, 0, 0.371);
+  padding: 20px 48px;
+  color: wheat;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.img3 {
+  background: url(img/img1.avif) no-repeat center center;
+  height: 60vh;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img4 {
+  background: url(img/img5.avif) no-repeat center center;
+  height: 60vh;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  background-attachment: fixed;
+}
+.round {
+  background: linear-gradient(red, yellow);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: relative;
+  top: -100px;
+  left: 80px;
+}
+.down-arrow {
+  font-size: 3rem;
+  font-weight: border;
+
+  position: absolute;
+  bottom: 50px;
+  color: rgba(0, 255, 119, 0.805);
+  transform: rotate(90deg);
+
+  animation: go-down 1s infinite;
+}
+@keyframes go-down {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
